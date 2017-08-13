@@ -1,0 +1,174 @@
+﻿    <!DOCTYPE html>
+    <!--TODO : unweebafy-->
+    <!-- homepage by noha javascript by nullbyte -->
+     
+    <html>
+     
+    <head>
+     
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+     
+    <title>～ようこそ～</title>
+	<link rel="icon" type="image/png" href="https://people.mozilla.org/~shorlander/files/australis-toolbar-buttons/images/favicon-homeTab.png">
+     
+    </head>
+    <style>
+    a{
+            color:#c3c3c3;
+            font-family:"Segoe UI light";
+            font-size:25px;
+            text-decoration:none;
+            margin-left:5px;
+            transition-property: color;
+            transition-duration: .2s;
+            transition-timing-function: linear;
+    }
+    body{
+            padding-left:10px;
+            padding-right:10px;
+            font-family:"Segoe UI light";
+            color:#c8c8c8;
+            font-size:34px;
+            background:#FBFBFB;
+			background-position: -300px 0px;
+			background-image: url("shinobu.png");
+			background-repeat: no-repeat;
+    }
+     
+    span{
+            margin-left:10px;
+            text-family:"segoe UI";
+            text-align: center;
+    }
+     
+    a:hover { color:#A9BFA5}
+     
+    input[type=text] {
+            width: 18px;
+            padding: 3px;
+            position:absolute;
+            right:5px;bottom:5px;
+            border: 1px solid #E6e6e6;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+            color: #bebebe;
+			background-position: -2px -1px;
+			background-image: url("search.png");
+			background-repeat: no-repeat;
+    }
+     
+    input[type=text]:hover {
+            border-color: #bebebe;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+            color: #bebebe;
+			width:230px;
+			background-position: 227px -1px;
+			padding-right: 20px;
+    }
+	input[type=text]:focus {
+            border-color: #bebebe;
+            transition-property: all;
+            transition-duration: .5s;
+            transition-timing-function: ease;
+            color: #bebebe;
+			width:230px;
+			background-position: 227px -1px;
+			padding-right: 20px;
+	}
+     
+    .boxed {
+            border: 2px solid #e6e6e6;
+            padding: 5px;
+            color: #494949;
+            background-color: #ffffff;
+            width: 760px;
+            margin-left: -390px;
+            margin-right: auto;
+            position:absolute;
+            left: 50%;
+			top: 40%;
+    }
+     
+    h1 {
+          margin-bottom: 10px;
+		  margin-top: -73px;
+		  padding-right: 9px;
+		  position: 		   absolute;
+top:               40%;
+left:              50%;
+-webkit-transform: translate(-50%, -50%);
+transform:         translate(-50%, -50%);
+		  
+    }
+     
+    </style>
+            <body>
+            <h1 align="center" id="message"></h1>
+                <script type="text/javascript">
+                        var d = new Date();
+                        var n = d.getHours();
+ 
+                        if ( n == 23 || n == 0) {
+                                message = "<img src='oyasumi.png'></img>";
+                        } else if ( n >= 1 && n <= 4 ) {
+                                message = "<img src='oyasumi.png'></img>";
+                        } else if ( n >= 5 && n <= 11 ) {
+                                message = "<img src='ohayou.png'></img>";
+                        } else if ( n >= 12 && n <= 17 ) {
+                                message = "<img src='konnichiwa.png'></img>";
+                        } else if ( n >= 18 && n <= 22 ) {
+                                message = "<img src='konbanwa.png'></img>";
+                        }
+ 
+                        document.getElementById("message").innerHTML = message;
+                </script>
+            <div class="boxed">
+            <span> <img src="boards.png"></span>
+            <a style="padding-left:10px" href="http://boards.4chan.org/vg/#s=dsg">dsg</a>
+			<a href="http://boards.4chan.org/vg/#s=fgg">fgg</a>
+			<a href="http://rpghajime.com.br/">hj</a>
+			<a href="http://rpghajime.com.br/index.php?act=ST&f=100&t=217&view=getnewpost">fx 〜</a>
+            </br>
+            <span> <img src="social.png"></span>
+            <a style="padding-left:10px" href="https://www.facebook.com">fb</a>
+            <a href="http://youtube.com/feed/subscriptions">yt</a>
+			<a href="http://filewarez.tv/forum.php">fw</a>
+			<a href="https://docs.google.com/spreadsheets/d/1PM6QZa8HhlxXCq5m6vUo7WqcSIdPJnu6fIzzirUmyD0/edit#gid=0">pkmn —</a>
+            </br>
+            <!--<span> <img src="music.png"></span>
+            <a style="padding-left:10px" href="http://ocremix.org">ocr</a>
+            <a href="http://thepiratebay.se">pirate</a>
+			<a href="http://kat.cr">kat</a>
+            </br>-->
+			<span> <img src="reddit.png"></span>
+			<a style="padding-left:10px" href="http://reddit.com/r/leagueoflegends">lol</a>
+			<a href="http://reddit.com/r/kappa">kp</a>
+			<a href="http://reddit.com/r/darksouls3">ds3</a>
+			<a href="https://www.mugenmonkey.com/darksouls3">bld</a>
+			</br>
+			<!--<span> <img src="art.png"></span>
+			<a style="padding-left:10px" href="http://pixiv.net">pixiv</a>
+			<a href="http://konachan.com">kona</a>
+			<a href="http://wallbase.cc">wall</a>
+			<a href="http://gelbooru.com">booru</a>
+			</br>
+			<span> <img src="anime.png"></span>
+			<a style="padding-left:10px" href="http://nyaa.se">nyaa</a>
+			<a href="http://toshinokyouko.com/?cat=1">kyouko</a>
+			<a href="http://bakabt.me">bakabt</a>
+			</br>
+			<span> <img src="stream.png"></span>
+			<a style="padding-left:10px" href="http://twitch.tv/directory">twitch</a>
+			<a href="http://azubu.tv/channels">azubu</a>
+			<a href="http://hitbox.tv/">hitbox</a>
+			</br>-->
+			
+            <form method="get" action="http://www.fuq.com/search/"> <input type="text" placeholder="" value=""
+            name="q">
+           
+            </div>
+     
+    </body>
